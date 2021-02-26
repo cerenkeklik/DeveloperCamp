@@ -8,7 +8,7 @@ namespace Entities.Concrete
     public class Category: IEntity
     {
         //Çıplak class kalmasın
-        public int CatgeoryId { get; set; }
+        public int CategoryId { get; set; }
         public string CategoryName { get; set; }
     }
 }
