@@ -5,6 +5,9 @@ namespace Core.Utilities.Interceptors
 {
     public abstract class MethodInterception : MethodInterceptionBaseAttribute
     {
+        //virtual method = ezilmeyi bekleyen methodlar(override)
+        // aspect demek bu method interceptionu temel alan ve hangisi çalışsın istiyorsan onu içeren operasyon.
+       //invocation- business method - for example add
         protected virtual void OnBefore(IInvocation invocation) { }
         protected virtual void OnAfter(IInvocation invocation) { }
         protected virtual void OnException(IInvocation invocation, System.Exception e) { }
